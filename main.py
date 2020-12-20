@@ -13,7 +13,8 @@ def getQuote():
         quote = quotes[index] #get quote 
     
     newIndex = index+1 #increment index 
-    if newIndex > 48:
+    # print(len(quotes) - 1, index,quote)
+    if newIndex > len(quotes) - 1:
         newIndex = 1
     
     quotes[0] = str(newIndex) + "\n"
